@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.calculator {
+    width: 400px;
+    background-color: #585f6e;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 5px 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+.calc_input {
+    width: 100%;
+    border: none;
+    font-size: 35px;
+    text-align: right;
+    padding: 10px;
+    background-color: #585f6e;
+    color: #54b662;
+}
+
+#op_input {
+    font-size: 20px;
+    color: #fff;
+}
+
+.calc_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.equal {
+    grid-column: span 2;
+    border-radius: 50px;
+}
+
+button {
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccddce;
+}
+
+.operation {
+    background-color: #54b662;
+    color: #fff;
+}
+
+.operation:hover {
+    background-color: #7bc286;
+}
+
+.histroy_page {
+    position: absolute;
+    width: 380px;
+    background-color: #4daf56;
+    height: 400px;
+    color: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    font-size: px;
+    overflow-y: auto;
+    display: none;
+}
+
+.histroy_icon {
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    left: 2%;
+    cursor: pointer;
+}
+
+.histroy_page.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.histroy_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.calc_his {
+    width: 100%;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+    background: transparent;
+    padding: 10px;
+    color: #fff;
+}
+
+.histroy_element {
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.histroy_element:hover {
+    background-color: #239734;
+    cursor: pointer;
+}
+
+.fa-trash {
+    cursor: pointer;
+}

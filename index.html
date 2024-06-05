@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <div class="calc_function">
+                <i class="fa fa-history histroy_icon"></i>
+                <input type="text" name="" id="op_input" class="calc_input" value="0" disabled>
+                <input type="text" name="" id="res_input" class="calc_input" value="0" disabled>
+            </div>
+
+            <div class="histroy_page">
+                <div class="histroy_head">
+                    <h4>Histroy</h4>
+                    <i class="fa fa-trash"></i>
+                </div>
+                <div class="hsitroy_operation">
+                    <div class="histroy_element">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc_grid">
+                <button class="operation" value="+">+</button>
+                <button class="operation" value="-">-</button>
+                <button class="operation" value="*">*</button>
+                <button class="operation" value="/">/</button>
+
+                <button value="9">9</button>
+                <button value="8">8</button>
+                <button value="7">7</button>
+                <button class="operation clear">C</button>
+
+                <button value="6">6</button>
+                <button value="5">5</button>
+                <button value="4">4</button>
+                <button class="operation clear-all">CA</button>
+
+                <button value="3">3</button>
+                <button value="2">2</button>
+                <button value="1">1</button>
+                <button class="operation" value="%">%</button>
+
+                <button value="0">0</button>
+                <button value=".">.</button>
+                <button class="operation equal" value="=">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
